@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico', //change logo
+  //favicon:
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -53,21 +53,18 @@ const config = {
     ({
       navbar: {
         title: 'Neo4j Performance Guide',
-        logo: {
-          alt: 'Neo4j Logo',
-          src: 'img/logo.svg',
-        },
         items: [
           {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Guide',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/dtomicevic/neo4jperf-guide",
+            className: 'header-github-link',
+            position: "right",
+            'aria-label': 'GitHub repository'
           },
         ],
       },
@@ -78,7 +75,7 @@ const config = {
             title: 'Guide',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Intro',
                 to: '/docs/intro',
               },
             ],
@@ -105,7 +102,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/dtomicevic/neo4jperf-guide',
               },
             ],
           },
