@@ -36,10 +36,9 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          routeBasePath: '/',
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/dtomicevic/neo4jperf-guide',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -55,12 +54,6 @@ const config = {
         title: 'Neo4j Performance Guide',
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Guide',
-          },
-          {
             href: "https://github.com/dtomicevic/neo4jperf-guide",
             className: 'header-github-link',
             position: "right",
@@ -70,50 +63,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Guide',
-            items: [
-              {
-                label: 'Intro',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/dtomicevic/neo4jperf-guide',
-              },
-            ],
-          },
-        ],
-        logo: {
-          alt: 'Memgraph Logo',
-          src: 'img/Memgraph-logo-white-rgb.png',
-          href: 'https://memgraph.com',
-          width: 160,
-        },
-        copyright: `Copyright © ${new Date().getFullYear()} Neo4j Performance Guide, Powered by Memgraph.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Neo4j Performance Guide`,
       },
       prism: {
         theme: lightCodeTheme,
