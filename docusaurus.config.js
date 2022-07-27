@@ -53,18 +53,9 @@ const config = {
     ({
       navbar: {
         title: 'Neo4j Performance Guide',
-        items: [
-          {
-            href: "https://github.com/dtomicevic/neo4jperf-guide",
-            className: 'header-github-link',
-            position: "right",
-            'aria-label': 'GitHub repository'
-          },
-        ],
       },
       footer: {
         style: 'light',
-        copyright: `Copyright © ${new Date().getFullYear()} Neo4j Performance Guide`,
       },
       prism: {
         theme: lightCodeTheme,
