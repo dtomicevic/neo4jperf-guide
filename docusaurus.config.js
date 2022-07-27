@@ -63,7 +63,7 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         copyright: `Copyright © ${new Date().getFullYear()} Neo4j Performance Guide`,
       },
       prism: {
