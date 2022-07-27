@@ -37,8 +37,9 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
-          editUrl:
-            'https://github.com/dtomicevic/neo4jperf-guide',
+          // uncomment if you want to add 'Edit this page'
+          //editUrl:
+          // 'https://github.com/dtomicevic/neo4jperf-guide',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
