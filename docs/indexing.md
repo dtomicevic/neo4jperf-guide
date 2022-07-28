@@ -1,6 +1,7 @@
 ---
 title: Indexing
 sidebar_label: Indexing
+slug: /neo4j-slow-query-performance-issue
 ---
 
 Ahh, indexing! One of the most common pitfalls in database performance in general, Neo4j included, is the usage of indexes. At first, it may seem what I need and index for in the Graph database, but graphs are abstractions over some other structure you can index and optimize. The wrong usage of the index can make a database unusable, which can be quite painful. Let's see a few common issues with Neo4j database performance and indexes. 
@@ -27,7 +28,9 @@ Bare in mind that there will be few memory storage penalties.
 After importing the data, understanding the graph structure, and executing any queries, ensure you have created the trigger. 
 To create a trigger, you can use the query below: 
 
-```CREATE INDEX index_name FOR (n:FooBar) ON (n.id)```
+```cypher
+CREATE INDEX index_name FOR (n:FooBar) ON (n.id)
+```
 
 The Cypher query above will create the index on the node property. Make sure you have an index with some appropriate name because you can check it out later. 
 
