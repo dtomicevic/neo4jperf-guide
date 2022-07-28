@@ -3,10 +3,7 @@ title: Indexing
 sidebar_label: Indexing
 ---
 
-
-**Ahh, indexing!**
-
-One of the most common pitfalls in database performance in general, Neo4j included, is regarding the usage of indexes. Let's see a few common issues. 
+Ahh, indexing! One of the most common pitfalls in database performance in general, Neo4j included, is the usage of indexes. At first, it may seem what I need and index for in the Graph database, but graphs are abstractions over some other structure you can index and optimize. The wrong usage of the index can make a database unusable, which can be quite painful. Let's see a few common issues with Neo4j database performance and indexes. 
 
 ## Neo4j slow query performance issues
 
@@ -21,23 +18,26 @@ Turn's out the user Cypher query is not considering the index that the user has 
 
 ### 1. Index graph modeling
 
-Before even considering setting the index up, think about how your data is modeled. Data modeling will help you 
-understand the graph structure, which you can use to increase your query performance. Notice nodes and the properties. It would be best if you had an index on their properties on given nodes that you will often use for search. By introducing an index, you will gain extra performance for search because Neo4J will store your index in a special way, optimized for performance. 
-Bare in mind that there will be few memory penalties. 
+Before even considering setting the index up, think about how your data is modeled. Data modeling will help you understand the graph structure, which you can use to increase your query performance.
+Notice nodes and the properties. It would be best if you had an index on their properties on given nodes that you will often use for search. By introducing an index, you will gain extra performance for search because Neo4J will store your index in a special way, optimized for performance. 
+Bare in mind that there will be few memory storage penalties. 
 
 ### 2. Setup the index
 
-After importing the data, analyzing it, and executing any queries, ensure you have created the trigger. 
+After importing the data, understanding the graph structure, and executing any queries, ensure you have created the trigger. 
 To create a trigger, you can use the query below: 
 
 ```CREATE INDEX index_name FOR (n:FooBar) ON (n.id)```
 
-The Cypher query above will create the index on the node property. Make sure you have an index with some appropriate name. 
+The Cypher query above will create the index on the node property. Make sure you have an index with some appropriate name because you can check it out later. 
 
 ### 3. Use index in your query
 
-The last part is to ensure your searches are optimized and your index is used in all Cypher queries from now on. In our example, every time we use a node `FooBar`, we should try to use the `id` property in the search. In your case, that will depend on the node and property your index is on. 
+The last part is to ensure your searches are optimized and your index is used in all Cypher queries from now on. In our example, every time we use a node `FooBar`, we should try to use the `id` property in the search. If we search `FooBar` node with some other property that is not indexed, we will not get any performance benefits. In your case, make sure that when you use the node that has an index, also use the property your index is on. 
 
+### 4. Labels are indexes 
 
+One more thing to keep in mind, if the database has multiple nodes with different labels, let's assume that our nodes have labels `FooBar`, `Foo`, and `Bar`. Neo4j will automatically create the index for each of those labels, and you will be able to make somewhat performant queries. 
 
+Neo4j has a lot of information in indexes. Feel free to jump to their official [docs](https://neo4j.com/docs/cypher-manual/current/indexes-for-search-performance/)for more information on indexes. 
 
