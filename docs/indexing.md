@@ -42,5 +42,5 @@ The last part is to ensure your searches are optimized and your index is used in
 
 One more thing to keep in mind, if the database has multiple nodes with different labels, let's assume that our nodes have labels `FooBar`, `Foo`, and `Bar`. Neo4j will automatically create the index for each of those labels, and you will be able to make somewhat performant queries. 
 
-Neo4j has a lot of information in indexes. Feel free to jump to their official [docs](https://neo4j.com/docs/cypher-manual/current/indexes-for-search-performance/)for more information on indexes. 
+Neo4j has a lot of information in indexes. Feel free to jump to their official [docs](https://neo4j.com/docs/cypher-manual/current/indexes-for-search-performance/) for more information on indexes. 
 
