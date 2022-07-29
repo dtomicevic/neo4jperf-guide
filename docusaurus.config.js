@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Neo4j Performance Guide',
   tagline: 'Learn all about Neo4j performance',
-  url: 'https://your-docusaurus-test-site.com', //change url
+  url: 'https://neo4j-guide.com/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -53,18 +53,9 @@ const config = {
     ({
       navbar: {
         title: 'Neo4j Performance Guide',
-        items: [
-          {
-            href: "https://github.com/dtomicevic/neo4jperf-guide",
-            className: 'header-github-link',
-            position: "right",
-            'aria-label': 'GitHub repository'
-          },
-        ],
       },
       footer: {
         style: 'light',
-        copyright: `Copyright © ${new Date().getFullYear()} Neo4j Performance Guide`,
       },
       prism: {
         theme: lightCodeTheme,
