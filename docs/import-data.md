@@ -35,7 +35,7 @@ LOAD CSV WITH HEADERS FROM "file:///foobar.csv" AS line
 CREATE (node:FooBar {id: toInteger(line.id))
 ```
 
-LOAD CSV will iterate over each CVS and execute the query for each CSV line. Each query transaction will be committed to the database. But don't skip the next two steps. There are more performance benefits to extract. 
+LOAD CSV will iterate over CVS and execute the query for each CSV line. Each query transaction will be committed to the database. But don't skip the next two steps. There are more performance benefits to extract. 
 
 ## Fix Cypher query import
 
