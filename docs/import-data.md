@@ -57,4 +57,4 @@ There is also an APOC library for importing with periodic commits, you can check
 
 One more option and only one for loading big datasets is by using the Neo4j admin import tool. The import tool is made to work on batch imports on large datasets, but it is made for import on previously unused databases. If you have a running database, you can load via `LOAD CSV,` but that will be slow, which can be a deal breaker for some. 
 
-Anyway, I hope this short guide helps. Feel free to search for more info on Neo4j docs about [Admin import tool](https://neo4j.com/docs/operations-manual/current/tools/neo4j-admin/neo4j-admin-import/)
+Anyway, I hope this short guide helps. Feel free to search for more info on Neo4j docs about [Admin import tool](https://neo4j.com/docs/operations-manual/current/tools/neo4j-admin/neo4j-admin-import/).
