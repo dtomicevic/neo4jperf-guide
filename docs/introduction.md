@@ -17,6 +17,6 @@ In this guide you can find tips and ticks for following topics:
 * Write data
 * Memory caching
 
-If you want to avoid performance and scale issues altogether, you can always check [Memgraph](https://memgraph.com/), a graph computation platform for streaming data with a high-performance C++ database. 
+
 
 
