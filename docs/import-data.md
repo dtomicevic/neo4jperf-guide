@@ -51,7 +51,7 @@ CREATE (node:FooBar {id: toInteger(line.id))
 
 Using periodic commits, Neo4j will build up transactional data and make a smaller number of database commits, improving overall performance. But still, it will have performance issues with the load on big datasets. 
 
-There is also an APOC library for importing with periodic commits, you can check it out [here](https://neo4j.com/labs/apoc/4.4/graph-updates/periodic-execution/)
+There is also an APOC library for importing with periodic commits, you can check it out [here](https://neo4j.com/labs/apoc/4.4/graph-updates/periodic-execution/).
 
 ## Admin import tool 
 
