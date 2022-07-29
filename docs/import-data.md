@@ -41,7 +41,7 @@ LOAD CSV will iterate over CVS and execute the query for each CSV line. Each que
 
 Executing Cypher queries line by line is a highway to hell if you have larger quantities of data. Running a Cypher query can slow down your performance because every Cypher query can become a single database transaction, which can bulk up the memory overhead. It would be best if you were careful with any Cypher query import on a large dataset.
 
-But there is a way to improve it by using a special Cypher clause, `USING PERIODIC COMMIT`
+But there is a way to improve it by using a special Cypher clause, `USING PERIODIC COMMIT`.
 
 ```
 USING PERIODIC COMMIT 500
