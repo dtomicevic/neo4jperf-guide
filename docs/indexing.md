@@ -20,7 +20,7 @@ Turn's out the user Cypher query is not considering the index that the user has 
 ### 1. Index graph modeling
 
 Before even considering setting the index up, think about how your data is modeled. Data modeling will help you understand the graph structure, which you can use to increase your query performance.
-Notice nodes and the properties. It would be best if you had an index on their properties on given nodes that you will often use for search. By introducing an index, you will gain extra performance for search because Neo4J will store your index in a special way, optimized for performance. 
+Notice how nodes and their properties are modeled. It would be best if you had an index on the node properties which you will often use for search. 
 Bare in mind that there will be few memory storage penalties. 
 
 ### 2. Setup the index
