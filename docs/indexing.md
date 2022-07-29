@@ -38,7 +38,7 @@ The Cypher query above will create the index on the node property. Make sure you
 
 The last part is to ensure your searches are optimized and your index is used in all Cypher queries from now on. In our example, every time we use a node `FooBar`, we should try to use the `id` property in the search. If we search `FooBar` node with some other property that is not indexed, we will not get any performance benefits. In your case, make sure that when you use the node that has an index, also use the property your index is on. 
 
-### 4. Labels are indexes 
+### 4. Labels are indexed
 
 One more thing to keep in mind, if the database has multiple nodes with different labels, let's assume that our nodes have labels `FooBar`, `Foo`, and `Bar`. Neo4j will automatically create the index for each of those labels, and you will be able to make somewhat performant queries. 
 
