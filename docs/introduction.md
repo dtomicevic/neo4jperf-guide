@@ -14,8 +14,9 @@ This guide is here to serve a community as helpful content on the Neo4j journey.
 In this guide you can find tips and ticks for following topics: 
 * [Import data](/docs/import-data.md)
 * [Indexes](/docs/indexing.md)
-* Write data
-* Memory caching
+* [Write speed](docs/../write-speed.md)
+* [Memory](docs/memory.md)
+* [Performance confing](docs/performance-config.md)
 
 
 

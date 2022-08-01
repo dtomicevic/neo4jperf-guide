@@ -4,7 +4,7 @@ sidebar_label: Indexing
 slug: /neo4j-slow-query-performance-issue
 ---
 
-Ahh, indexing! One of the most common pitfalls in database performance in general, Neo4j included, is the usage of indexes. At first, it may seem what I need and index for in the Graph database, but graphs can be stored as some other data structure in the background, this means you can index and optimize for storage data structure. The wrong usage of the index can make a database unusable, which can be quite painful. Let's see a few common issues with Neo4j database performance and indexes. 
+Ahh, indexing! One of the most common pitfalls in database performance in general, Neo4j included, is the usage of indexes. At first, it may seem what I need an index for in the Graph database, but graphs can be stored as some other data structure in the background, this means you can index and optimize for storage data structure. The wrong usage of the index can make a database unusable, which can be quite painful. Let's see a few common issues with Neo4j database performance and indexes. 
 
 ## Neo4j slow query performance issues
 
@@ -20,7 +20,7 @@ Turn's out the user Cypher query is not considering the index that the user has 
 ### 1. Index graph modeling
 
 Before even considering setting the index up, think about how your data is modeled. Data modeling will help you understand the graph structure, which you can use to increase your query performance.
-Notice how nodes and their properties are modeled. It would be best if you had an index on the node properties which you will often use for search. 
+Notice how nodes and their properties are modeled. It would be best if you had an index on the node properties, which you will often use for search. 
 Bare in mind that there will be few memory storage penalties. 
 
 ### 2. Setup the index

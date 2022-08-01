@@ -3,6 +3,9 @@ module.exports = {
     'introduction',
     'import-data',
     'indexing',
+    'writing-speed',
+    'memory',
+    'performance-config'
     
   ],
 };

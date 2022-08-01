@@ -1,6 +1,6 @@
 ---
-title: Writing speed 
-sidebar_label: Writing speed
+title: Write speed 
+sidebar_label: Write speed
 slug: /neo4j-slow-write-performance
 ---
 
@@ -49,5 +49,5 @@ The important note here is the size of your updates should determine that batch 
 
 The Cypher for statements in batches is recommended for imports. Import is just writing to the database, and running the statements in batches can improve import performance. More information on [import guide](/docs/import-data.md)
 
-If you still experience write issues taka a look at the [memory](/docs/memory.md) and [performance-confi](performance-config.md) guides. 
+If you still experience write issues taka a look at the [memory](/docs/memory.md) and [performance-config](docs/performance-config.md) guides. 
 
