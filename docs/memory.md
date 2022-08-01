@@ -22,7 +22,7 @@ But after loading a while, there comes an `Out of memory` exception. This issue 
 ### Optimize your Cypher query
 
 In quite a few cases, there are some query issues. You can use [Query tuning tool](performance-config.md) we mentioned in performance config. 
-Out-of-memory issues are happening on some big workloads, and if your query is causing it, you can use `PERIODIC COMMIT` or APOC we mentioned in [writing speed guide](writing-speed.md). In short, running your queries in batches is less memory intensive than running them all in a single chunk. 
+Out-of-memory issues are happening on some big workloads, and if your query is causing it, you can use `PERIODIC COMMIT` or APOC we mentioned in [writing speed guide](/docs/write-speed.md). In short, running your queries in batches is less memory intensive than running them all in a single chunk. 
 
 
 ### Set your memory limits

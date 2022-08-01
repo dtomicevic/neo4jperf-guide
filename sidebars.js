@@ -3,7 +3,7 @@ module.exports = {
     'introduction',
     'import-data',
     'indexing',
-    'writing-speed',
+    'write-speed',
     'memory',
     'performance-config'
     
