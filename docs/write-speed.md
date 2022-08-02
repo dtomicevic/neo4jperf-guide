@@ -21,7 +21,7 @@ In order to improve your write speed performance, check your indexes, labels, an
 
 ### Baches of transactions
 
-Neo4j store each transaction step in memory. If anything fails, it can roll back all the changes that caused the issue. This is primarily because of being an ACID-compliant database.
+Neo4j stores each transaction step in memory. If anything fails, it can roll back all the changes that caused the issue. This is primarily because it is an ACID-compliant database.
 The more transactions there are, they all store in the JVM memory heap, which can cause out-of-memory exceptions and crash the server. To avoid out-of-memory issues, try to use baches with `PERIODIC COMMIT` Cypher statement. Cypher statement will ensure that running the transaction contains a defined number of  Cypher statements.  
 
 ```
