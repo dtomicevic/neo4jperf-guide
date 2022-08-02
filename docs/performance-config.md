@@ -31,7 +31,7 @@ For more details, check out this [guide](https://neo4j.com/docs/cypher-manual/cu
 
 ### Understanding your graph schema 
 
-If you understand your graph schema and insides you what to extract from the database, you can see what essential nodes/relationships are. In order to boost database performance, you can use indexes and meaningful nodes/relationships to index them. This approach has pros and cons, but you can balance writing and reading speed, it is up to you to decide how to structure your graph. 
+If you understand your graph schema and insights that can be extracted from the graph, you can see what the important nodes and relationships are. In order to boost database performance, you can use indexes and meaningful nodes/relationships to index them. This approach has pros and cons, but you can balance writing and reading speed. It is up to you to decide how to structure your graph. 
 
 
 ### Neo4j properties 
