@@ -10,7 +10,7 @@ Neo4j is a database written in Java, and it runs inside a JVM. From the start, y
 
 ## Neo4j performance issues
 
-In order to put things in perspective, take a look at this issue from Stack Overflow: ["Neo4j Performance Challenge - How to Improve?"](https://stackoverflow.com/questions/29303841/neo4j-performance-challenge-how-to-improve). As you can see from the issue, the user has 12.5 million nodes and 64 million of relationships.
+In order to put things in perspective, take a look at this issue from Stack Overflow: ["Neo4j Performance Challenge - How to Improve?"](https://stackoverflow.com/questions/29303841/neo4j-performance-challenge-how-to-improve). As you can see from the issue, the user has 12.5 million nodes and 64 million relationships.
 The scale of this graph is big. Of course, there are always bigger graphs, but this is sufficient to get a sense of scale. User describes issue in the right manner, taking in consideration **graph schema**, **query profile**, **Neo4j properties**, **CPU**, **Memory**, **Disk** and some less relevant things. By looking at all these variables, you can see a lot of complexity there. 
 
 
