@@ -37,7 +37,7 @@ If you understand your graph schema and insides you what to extract from the dat
 ### Neo4j properties 
 
 You can use a whole set of configuration properties to improve Neo4j performance. Since Neo4j has some memory settings related to JVM, you can look at [memory guide](memory.md). In the linked guide, you can find configurations that can help with performance. 
-One interesting configuration property is also related to memory but is Neo4j specific. It is called `pagecache`. Page cache defines the amount of memory cached in the RAM. The cache is used for important data such as indexes to avoid expensive disc access. You can set it up in neo4j.conf file like this: 
+One interesting configuration property is also related to memory but it's Neo4j specific. It is called `pagecache`. Page cache defines the amount of memory cached in the RAM. The cache is used for important data such as indexes to avoid expensive disc access. You can set it up in neo4j.conf file like this: 
 
 ```
 dbms.memory.pagecache.size=16GB
