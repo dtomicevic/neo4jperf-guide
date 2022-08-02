@@ -27,7 +27,7 @@ Out-of-memory issues are happening on some big workloads, and if your query is c
 
 ### Set your memory limits
 
-Since Neo4j is running on top of JVM, there is a possibility to configure JVM memory settings. Neo4j have an `neo4j.conf` file for configuration, here is a [reference](https://neo4j.com/docs/operations-manual/current/reference/configuration-settings/) too all options. 
+Since Neo4j is running on top of JVM, there is a possibility to configure JVM memory settings. Neo4j has an `neo4j.conf` file for configuration, here is a [reference](https://neo4j.com/docs/operations-manual/current/reference/configuration-settings/) to all options. 
 There are three options that you can use to handle memory issues: 
 
 * `dbms.memory.heap.initial_size` 
