@@ -8,7 +8,7 @@ Fast reads are essential for every database. Once the database gets huge, it nee
 
 ## Neo4j slow write performance 
 
-Neo4j database can have an issue with write performance. Take a look at this issue user have reported ["Neo4j outrageous write performance"](https://stackoverflow.com/questions/40870057/neo4j-outrageous-write-performance). If you read an issue, you can notice that the user has tried several approaches to combat slow write performance. First with a bulk of synchronous 1000 queries and transactions, then with one transaction and 1000 queries, and last 1000 async transactions with one query,  all on ten thread machine. All options for 1000 transactions are in the time range of second, which is not great. Some approaches and comments from this issue are great, but let's make a summary that can help you maximize Neo4j write performance. 
+Neo4j database can have an issue with write performance. Take a look at this issue users have reported ["Neo4j outrageous write performance"](https://stackoverflow.com/questions/40870057/neo4j-outrageous-write-performance). If you read an issue, you can notice that the user has tried several approaches to combat slow write performance. First with a bulk of synchronous 1000 queries and transactions, then with one transaction and 1000 queries, and last 1000 async transactions with one query,  all on ten thread machine. All options for 1000 transactions are in the time range of second, which is not great. Some approaches and comments from this issue are great, but let's make a summary that can help you maximize Neo4j write performance. 
 
 ## Optimize Neo4j write performance
 
