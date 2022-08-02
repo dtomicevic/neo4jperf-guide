@@ -36,7 +36,7 @@ There are three options that you can use to handle memory issues:
 
 The Neo4j configuration parameter `dbms.memory.heap.initial_size` defines the initial reserved size of the memory heap available to Neo4j. If you do not set an exact value, the value is determined by JVM and available system resources. 
 
-The next Neo4j configuration parameter `dbms.memory.heap.max_size` defines to upper limit on your Neo4j heap size. Again, if you do not set the value, it will be set by JVM explicitly. 
+The next Neo4j configuration parameter `dbms.memory.heap.max_size` defines the upper limit on your Neo4j heap size. Again, if you do not set the value, it will be set by JVM explicitly. 
 
 To set the parameters, you can write something like this: 
 
