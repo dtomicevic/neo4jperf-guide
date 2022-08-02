@@ -9,7 +9,7 @@ Neo4j is built on top of bulky JVM, and with every JVM comes familiar out-of-mem
 
 ## Neo4j out of memory issue
 
-Out-of-memory issues and JVM are familiar, but let's see what the pain points with Neo4j are. If you search the internet, you will find vast amounts of memory-related issues. Take a look at this ["Neo4j delete graph out of memory"](https://stackoverflow.com/questions/44698936/neo4j-delete-graph-out-of-memory). This stack overflow user wants to delete all nodes and relationships, with 11 million of those. 
+Out-of-memory issues and JVM are familiar, but let's see what the pain points with Neo4j are. If you search the Internet, you will find vast amounts of memory-related issues. Take a look at this ["Neo4j delete graph out of memory"](https://stackoverflow.com/questions/44698936/neo4j-delete-graph-out-of-memory). This stack overflow user wants to delete all nodes and relationships, 11 million entities. 
 The user runs simple Cypher: 
 ```
 MATCH (n) 
